@@ -19,7 +19,8 @@ func main() {
 		age:   37,
 	}
 
-	saySomething(p)
+	saySomething(&p)
+	p.speak()
 }
 
 func (p *person) speak() {
